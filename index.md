@@ -1,7 +1,7 @@
 ---
 # layout: index
 layout: landing
-description: Workshop on model predictive control for mechatronic systems using Impact
+description: Model Predictive Control with Impact
 truck_trailer_video_id: SBNwXVDfLDg
 xplanar_video_id: zhZ2Ko5VxUk
 # drone_racing_video_id: bEeHD49rx20
