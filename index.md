@@ -22,17 +22,26 @@ bin_picking_video_id: iULN3skmdjs
 
 ### Overview
 
-In this workshop, participants will engage in hands-on exploration of model predictive control applied to mechatronic systems. By engaging with cutting-edge tools and techniques, participants will develop the skills necessary to configure and deploy model predictive controllers on real hardware.
+Model Predictive Control is a well-established technique for controlling (possibly) nonlinear systems that has predictive ability and can cope with constraints. It has a strong track record in chemical engineering. More recent advances in problem formulations and high-performance solvers have expanded MPC’s applicability to domains such as power systems, mechatronics, and robotics, with complex dynamics and high sampling rates.
 
-To streamline the guided exercises, the workshop makes use of the free and open-source [Rockit](https://gitlab.kuleuven.be/meco-software/rockit) [1] and [Impact](https://gitlab.kuleuven.be/meco-software/impact) [2][3] software frameworks developed by the [MECO Research Team](https://www.mech.kuleuven.be/en/pma/research/meco) at KU Leuven and built on top of the numerical optimization framework [CasADi](https://web.casadi.org/) [4], designed for efficient nonlinear programming. These frameworks offer to the control engineer a simple unified frontend to tap into high performance solvers like fatrop, acados, and grampc. The architecture of Impact is given below.
+In this tutorial, participants will engage in hands-on exploration of MPC applied to mechatronic systems using Impact [1][2]. Impact is a flexible toolchain for the specification, prototyping, and deployment of optimal control problems (OCP) and model predictive control (MPC) strategies, with automatic generation of deployable artifacts. Impact is built on top of the Rockit toolkit for OCPs [3] and the highly popular CasADi symbolic framework for numerical optimization [4].
 
-<img src="./assets/images/impact.png" alt="image info" style="max-width: 100%; height: auto;">
+The key contribution of the toolchain, and this workshop, is to reduce the engineering complexity of MPC implementations by providing:
 
-Exercises will be mainly in Python and Matlab. Attendees can later adopt the presented open-source software frameworks in their research/applications.
+1. an intuitive symbolic tool with abstraction of technical details that are cumbersome to implement, and
+2. flexible integration with state-of-the-art numerical optimization solvers, such as acados [3], Fatrop [4], and GRAMPC [5], 
+    for rapid prototyping and high-performance embedded deployment.
 
-While foundational concepts of nonlinear programming, optimal control and model predictive control will be briefly introduced, the course focuses on learning-by-doing. The course prioritizes practical know-how, enabling participants to directly apply Impact to tackle real-world control challenges.
+Impact is written in Python and offers bindings for MATLAB. The generated artifacts can be executed from C/C++, Python, MATLAB, Simulink, and ROS 2 environments, and easily deployed in simulation and on hardware. Workshop exercises will be in Python. Attendees will gain practical experience and can adopt the presented open-source software frameworks in their research and applications.
 
-This workshop is organized by members of the [MECO Research Team](https://www.mech.kuleuven.be/en/pma/research/meco) of core lab MPRO, Flanders Make@KU Leuven, in collaboration with core lab MotionS, Flanders Make. The MECO Research Team focusses on modeling, estimation, identification, analysis and optimal control of motion and motion systems such as mechatronic systems or machine tools. It combines theoretical contributions (development of design methodologies) with experimental knowhow (implementation and experimental validation on lab-scale as well as industrial setups). The theoretical research benefits from the group's expertise on numerical optimization, especially convex optimization. 
+[1] A. Florez, A. Astudillo, W. Decré, J. Swevers, and J. Gillis, "IMPACT: A Toolchain for Nonlinear Model Predictive Control Specification, Prototyping, and Deployment", IFAC-PapersOnLine, vol. 56, no. 2, pp. 3164–3169, 2023, doi: https://doi.org/10.1016/j.ifacol.2023.10.1451.
+[2] A. Astudillo, A. Florez, W. Decré, and J. Swevers, “Rapid Deployment of Model Predictive Control for Robotic Systems: From IMPACT to ROS 2 Through Code Generation”, in Proceedings of the 2024 IEEE 18th International Conference on Advanced Motion Control (AMC), 2024, doi: https://doi.org/10.1109/amc58169.2024.10505632.
+[3] Gillis, J., Vandewal, B., Pipeleers, G., Swevers, J., “Effortless modeling of optimal control problems with rockit”, 39th Benelux Meeting on Systems and Control 2020, Elspeet, The Netherlands
+[4] Andersson, J.A.E., Gillis, J., Horn, G. et al. CasADi: a software framework for nonlinear optimization and optimal control. Math. Prog. Comp. 11, 1–36 (2019), doi: https://doi.org/10.1007/s12532-018-0139-4.
+[5] Verschueren, R., Frison, G., Kouzoupis, D. et al. acados—a modular open-source framework for fast embedded optimal control. Math. Prog. Comp. 14, 147–183 (2022), doi:https://doi.org/10.1007/s12532-021-00208-8.
+[6] L. Vanroye, A. Sathya, J. De Schutter and W. Decré, “FATROP: A Fast Constrained Optimal Control Problem Solver for Robot Trajectory Optimization and Control,” 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA, 2023, pp. 10036-10043, doi: https://doi.org/10.1109/IROS55552.2023.10342336.
+[7] Englert, T., Völz, A., Mesmer, F. et al. A software framework for embedded nonlinear model predictive control using a gradient-based augmented Lagrangian approach (GRAMPC). Optim Eng 20, 769–809 (2019), doi:  https://doi.org/10.1007/s11081-018-9417-2.
+
 
 The following videos show previous works developed by the MECO Research Team using the software tools that will be used in this workshop:
 
@@ -44,20 +53,13 @@ The following videos show previous works developed by the MECO Research Team usi
 
 ### Registration
 
-**Participation at the workshop is free of charge, but registration is compulsory**. Please contact the organizers in case you have any questions.
-
-Lunch will be provided during the workshop.
-
-<a href="https://forms.office.com/e/P4ikS0FxaN" type="button" class="btn btn-primary d-lg-inline-block my-lg-0 disabled" target="_blank">Registration is now closed.</a>
-
-**A confirmation email has been sent by the organizers to all participants.**
+Registration for this workshop is managed through the CCTA conference registration system.
 
 ***
 
 ### Important dates
 
-- Registration deadline: February 7, 2025
-- Workshop date: February 27, 2025
+- Workshop date: August 11, 2026
 
 ***
 
@@ -65,23 +67,23 @@ Lunch will be provided during the workshop.
 
 This workshop is organized (and its content has been created) by: 
 
-[Alvaro Florez](https://www.mech.kuleuven.be/en/pma/research/meco/people/00142153)  
+[Alvaro Javier Florez Martínez](https://www.mech.kuleuven.be/en/pma/research/meco/people/00142153)  
 Doctoral researcher
 
-[Branimir Mrak](https://www.linkedin.com/in/branimir-mrak)  
-Senior Research Engineer
+[Joris Gillis](https://www.mech.kuleuven.be/en/pma/research/meco/people/00052373)  
+Research scientist
 
-[David Kiessling](https://www.mech.kuleuven.be/en/pma/research/meco/people/00140695)  
+[Mathias Bos](https://www.mech.kuleuven.be/en/pma/research/meco/people/00110026)  
+Postdoctoral researcher
+
+[Wilm Decré](https://www.mech.kuleuven.be/en/pma/research/meco/people/00052672)  
+Associate professor
+
+[Louis Callens](https://www.mech.kuleuven.be/en/pma/research/meco/people/00143705)  
 Doctoral researcher
 
 [Jan Swevers](https://www.mech.kuleuven.be/en/pma/research/meco/people/00015548)  
-Professor
-
-[Joris Gillis](https://www.mech.kuleuven.be/en/pma/research/meco/people/00052373)  
-Research expert
-
-[Wilm Decré](https://www.mech.kuleuven.be/en/pma/research/meco/people/00052672)  
-Research manager
+Full professor
 
 ***
 
