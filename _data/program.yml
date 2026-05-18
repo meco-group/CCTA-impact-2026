@@ -16,25 +16,25 @@ legend:
 days:
   - name: Day 1
     events:
-      - time: 12:00 to 13:00
-        title: Lunch
+      - time: 9:00 to 17:00
+        title: Program to be announced
         subtitle: 
         category: General
-      - time: 13:00 to 13:30
-        title: Introduction to nonlinear programming, optimal control and model predictive control
-        subtitle: Preliminary concepts on specifying and solving nonlinear programming problems
-        category: Theoretical
-      - time: 13:30 to 15:00
-        title: Tutorial on Impact
-        subtitle: How to easily specify, prototype and deploy model predictive controllers
-        category: Practical
-      - time: 15:00 to 15:15
-        title: Break
-      - time: 15:15 to 15:45
-        title: NN-MPC
-        subtitle: Neural Network approximated MPC
-        category: Practical
-      - time: 15:45 to 16:00
-        title: Concluding remarks
-        category: General
+      # - time: 13:00 to 13:30
+      #   title: Introduction to nonlinear programming, optimal control and model predictive control
+      #   subtitle: Preliminary concepts on specifying and solving nonlinear programming problems
+      #   category: Theoretical
+      # - time: 13:30 to 15:00
+      #   title: Tutorial on Impact
+      #   subtitle: How to easily specify, prototype and deploy model predictive controllers
+      #   category: Practical
+      # - time: 15:00 to 15:15
+      #   title: Break
+      # - time: 15:15 to 15:45
+      #   title: NN-MPC
+      #   subtitle: Neural Network approximated MPC
+      #   category: Practical
+      # - time: 15:45 to 16:00
+      #   title: Concluding remarks
+      #   category: General
 
