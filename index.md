@@ -61,20 +61,20 @@ This workshop is organized (and its content has been created) by:
 [Alvaro Javier Flórez Martínez](https://www.mech.kuleuven.be/en/pma/research/meco/people/00142153)  
 Doctoral researcher
 
+[Jan Swevers](https://www.mech.kuleuven.be/en/pma/research/meco/people/00015548)  
+Full professor
+
 [Joris Gillis](https://www.mech.kuleuven.be/en/pma/research/meco/people/00052373)  
 Research scientist
+
+[Louis Callens](https://www.mech.kuleuven.be/en/pma/research/meco/people/00143705)  
+Doctoral researcher
 
 [Mathias Bos](https://www.mech.kuleuven.be/en/pma/research/meco/people/00110026)  
 Postdoctoral researcher
 
 [Wilm Decré](https://www.mech.kuleuven.be/en/pma/research/meco/people/00052672)  
 Associate professor
-
-[Louis Callens](https://www.mech.kuleuven.be/en/pma/research/meco/people/00143705)  
-Doctoral researcher
-
-[Jan Swevers](https://www.mech.kuleuven.be/en/pma/research/meco/people/00015548)  
-Full professor
 
 ***
 
