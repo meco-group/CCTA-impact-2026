@@ -78,11 +78,11 @@ Associate professor
 
 ***
 
-### Contact
+<!-- ### Contact
 
 For any questions, please feel free to contact the organizers at:
 
     wilm.decre <at> kuleuven.be
 
-*** 
+***  -->
 ### Relevant repositories
