@@ -3,7 +3,7 @@ description: ""
 baseurl: ""
 url: https://meco-group.github.io/CCTA-impact-2026
 
-theme: jekyll-nagymaros
+theme: minima
 
 copyright: MECO Research Team
 indexing: true
