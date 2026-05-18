@@ -1,10 +1,16 @@
 title: References
 references:
   - number: 1
-    text: "J. Gillis, B. Vandewal, G. Pipeleers, J. Swevers. 'Effortless modeling of optimal control problems with Rockit.'  39th Benelux Meeting on Systems and Control 2020, Elspeet, The Netherlands. https://gitlab.kuleuven.be/meco-software/rockit"
+    text: "A. Florez, A. Astudillo, W. Decre, J. Swevers, and J. Gillis, 'IMPACT: A Toolchain for Nonlinear Model Predictive Control Specification, Prototyping, and Deployment', IFAC-PapersOnLine, vol. 56, no. 2, pp. 3164-3169, 2023, doi: https://doi.org/10.1016/j.ifacol.2023.10.1451."
   - number: 2
-    text: "A. Florez, A. Astudillo, W. Decré, J. Swevers, and J. Gillis, 'IMPACT: A Toolchain for Nonlinear Model Predictive Control Specification, Prototyping, and Deployment', IFAC-PapersOnLine, vol. 56, no. 2, pp. 3164-3169, 2023. https://gitlab.kuleuven.be/meco-software/impact"
+    text: "A. Astudillo, A. Florez, W. Decre, and J. Swevers, 'Rapid Deployment of Model Predictive Control for Robotic Systems: From IMPACT to ROS 2 Through Code Generation', in Proceedings of the 2024 IEEE 18th International Conference on Advanced Motion Control (AMC), 2024, doi: https://doi.org/10.1109/amc58169.2024.10505632."
   - number: 3
-    text: "A. Astudillo, A. Florez, W. Decré, and J. Swevers, 'Rapid Deployment of Model Predictive Control for Robotic Systems: From IMPACT to ROS 2 Through Code Generation', in Proceedings of the 2024 IEEE 18th International Conference on Advanced Motion Control (AMC), 2024."
+    text: "J. Gillis, B. Vandewal, G. Pipeleers, J. Swevers, 'Effortless modeling of optimal control problems with rockit', 39th Benelux Meeting on Systems and Control 2020, Elspeet, The Netherlands."
   - number: 4
-    text: "J. Andersson, J. Gillis, G. Horn, J. Rawlings, and M. Diehl, 'CasADi: a software framework for nonlinear optimization and optimal control', Mathematical Programming Computation, vol. 11, 2019."
+    text: "J.A.E. Andersson, J. Gillis, G. Horn et al. CasADi: a software framework for nonlinear optimization and optimal control. Math. Prog. Comp. 11, 1-36 (2019), doi: https://doi.org/10.1007/s12532-018-0139-4."
+  - number: 5
+    text: "R. Verschueren, G. Frison, D. Kouzoupis et al. acados-a modular open-source framework for fast embedded optimal control. Math. Prog. Comp. 14, 147-183 (2022), doi: https://doi.org/10.1007/s12532-021-00208-8."
+  - number: 6
+    text: "L. Vanroye, A. Sathya, J. De Schutter and W. Decre, 'FATROP: A Fast Constrained Optimal Control Problem Solver for Robot Trajectory Optimization and Control,' 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA, 2023, pp. 10036-10043, doi: https://doi.org/10.1109/IROS55552.2023.10342336."
+  - number: 7
+    text: "T. Englert, A. Volz, F. Mesmer et al. A software framework for embedded nonlinear model predictive control using a gradient-based augmented Lagrangian approach (GRAMPC). Optim Eng 20, 769-809 (2019), doi: https://doi.org/10.1007/s11081-018-9417-2."
