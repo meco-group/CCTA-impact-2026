@@ -58,7 +58,7 @@ Registration for this workshop is managed through the CCTA conference registrati
 
 This workshop is organized (and its content has been created) by: 
 
-[Alvaro Javier Florez Martínez](https://www.mech.kuleuven.be/en/pma/research/meco/people/00142153)  
+[Alvaro Javier Flórez Martínez](https://www.mech.kuleuven.be/en/pma/research/meco/people/00142153)  
 Doctoral researcher
 
 [Joris Gillis](https://www.mech.kuleuven.be/en/pma/research/meco/people/00052373)  
