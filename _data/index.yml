@@ -1,8 +1,8 @@
-dates: February 27, 2025 at noon
-place: KU Leuven, Quadrivium, room Arithmetica (QDV.02.0100), Celestijnenlaan 200, 3001 Heverlee
+dates: August 11, 2026
+place: The 10th IEEE Conference on Control Technology and Applications (CCTA) 2026
 buttons:
   - text: Workshop's GitHub
-    url: https://github.com/meco-group/impact-2025
+    url: https://github.com/meco-group/CCTA-impact-2026
     disabled: false
   - text: CasADi
     url: https://github.com/casadi/casadi

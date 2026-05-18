@@ -6,26 +6,36 @@ groups:
   - title: 
     columns: false
     members:
-      - name: Alejandro
-        surname: Astudillo
-        email: alejandro.astudillovigoya@kuleuven.be
-        url: https://www.mech.kuleuven.be/en/pma/research/meco/people/00124760
+      - name: Alvaro Javier
+        surname: Florez Martínez
+        email: alvaro.florez@kuleuven.be
+        url: https://www.mech.kuleuven.be/en/pma/research/meco/people/00142153
+        position: Doctoral researcher
+      - name: Joris
+        surname: Gillis
+        email: joris.gillis@kuleuven.be
+        url: https://www.mech.kuleuven.be/en/pma/research/meco/people/00052373
+        position: Research scientist
+      - name: Mathias
+        surname: Bos
+        email: mathias.bos@kuleuven.be
+        url: https://www.mech.kuleuven.be/en/pma/research/meco/people/00110026
         position: Postdoctoral researcher
       - name: Wilm
         surname: Decré
         email: wilm.decre@kuleuven.be
         url: https://www.mech.kuleuven.be/en/pma/research/meco/people/00052672
-        position: Research manager
+        position: Associate professor
       - name: Louis
         surname: Callens
         email: louis.callens@kuleuven.be
         url: https://www.mech.kuleuven.be/en/pma/research/meco/people/00143705
         position: Doctoral researcher
-      - name: Alex
-        surname: Gonzalez García
-        email: alex.gonzalezgarcia@kuleuven.be
-        url: https://www.mech.kuleuven.be/en/pma/research/meco/people/00159546
-        position: Doctoral researcher
+      - name: Jan
+        surname: Swevers
+        email: jan.swevers@kuleuven.be
+        url: https://www.mech.kuleuven.be/en/pma/research/meco/people/00015548
+        position: Full professor
   # - title: Local organizer
   #   columns: false
   #   members:
