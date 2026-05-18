@@ -35,11 +35,17 @@ The key contribution of the toolchain, and this workshop, is to reduce the engin
 Impact is written in Python and offers bindings for MATLAB. The generated artifacts can be executed from C/C++, Python, MATLAB, Simulink, and ROS 2 environments, and easily deployed in simulation and on hardware. Workshop exercises will be in Python. Attendees will gain practical experience and can adopt the presented open-source software frameworks in their research and applications.
 
 [1] A. Florez, A. Astudillo, W. Decré, J. Swevers, and J. Gillis, "IMPACT: A Toolchain for Nonlinear Model Predictive Control Specification, Prototyping, and Deployment", IFAC-PapersOnLine, vol. 56, no. 2, pp. 3164–3169, 2023, doi: https://doi.org/10.1016/j.ifacol.2023.10.1451.
+
 [2] A. Astudillo, A. Florez, W. Decré, and J. Swevers, “Rapid Deployment of Model Predictive Control for Robotic Systems: From IMPACT to ROS 2 Through Code Generation”, in Proceedings of the 2024 IEEE 18th International Conference on Advanced Motion Control (AMC), 2024, doi: https://doi.org/10.1109/amc58169.2024.10505632.
-[3] Gillis, J., Vandewal, B., Pipeleers, G., Swevers, J., “Effortless modeling of optimal control problems with rockit”, 39th Benelux Meeting on Systems and Control 2020, Elspeet, The Netherlands
+
+[3] Gillis, J., Vandewal, B., Pipeleers, G., Swevers, J., “Effortless modeling of optimal control problems with rockit”, 39th Benelux Meeting on Systems and Control 2020, Elspeet, The Netherlands.
+
 [4] Andersson, J.A.E., Gillis, J., Horn, G. et al. CasADi: a software framework for nonlinear optimization and optimal control. Math. Prog. Comp. 11, 1–36 (2019), doi: https://doi.org/10.1007/s12532-018-0139-4.
+
 [5] Verschueren, R., Frison, G., Kouzoupis, D. et al. acados—a modular open-source framework for fast embedded optimal control. Math. Prog. Comp. 14, 147–183 (2022), doi:https://doi.org/10.1007/s12532-021-00208-8.
+
 [6] L. Vanroye, A. Sathya, J. De Schutter and W. Decré, “FATROP: A Fast Constrained Optimal Control Problem Solver for Robot Trajectory Optimization and Control,” 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA, 2023, pp. 10036-10043, doi: https://doi.org/10.1109/IROS55552.2023.10342336.
+
 [7] Englert, T., Völz, A., Mesmer, F. et al. A software framework for embedded nonlinear model predictive control using a gradient-based augmented Lagrangian approach (GRAMPC). Optim Eng 20, 769–809 (2019), doi:  https://doi.org/10.1007/s11081-018-9417-2.
 
 
