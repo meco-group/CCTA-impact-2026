@@ -3,10 +3,10 @@ content:
   description: Map of workshop venue
   text: Sheraton Vancouver Wall Centre
 
-center: 49.2827, -123.1207
+center: 49.2801284969997, -123.12707796515443
 zoom: 15
 
 markers:
   - title: Sheraton Vancouver Wall Centre
     text: Location of the workshop
-    latlng: 49.2827, -123.1207
+    latlng: 49.2801284969997, -123.12707796515443
