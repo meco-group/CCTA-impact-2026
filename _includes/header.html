@@ -1,7 +1,10 @@
 <header class="bg-{{ site.data.skin.header.bg | default: 'gray-4' }}">
     <div class="container">
         <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
+            <a class="navbar-brand d-inline-flex align-items-center" href="{{ site.url }}">
+                <img src="{{ '/assets/images/maple_leaf.svg' | prepend: site.url }}" alt="Maple leaf" width="22" height="22" class="me-2">
+                <span>{{ site.title }}</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
