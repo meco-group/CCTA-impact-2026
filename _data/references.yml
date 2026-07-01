@@ -14,3 +14,5 @@ references:
     text: "L. Vanroye, A. Sathya, J. De Schutter and W. Decre, 'FATROP: A Fast Constrained Optimal Control Problem Solver for Robot Trajectory Optimization and Control,' 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA, 2023, pp. 10036-10043, doi: https://doi.org/10.1109/IROS55552.2023.10342336."
   - number: 7
     text: "T. Englert, A. Volz, F. Mesmer et al. A software framework for embedded nonlinear model predictive control using a gradient-based augmented Lagrangian approach (GRAMPC). Optim Eng 20, 769-809 (2019), doi: https://doi.org/10.1007/s11081-018-9417-2."
+  - number: 8
+    text: "A. Florez, J. Gillis, A. Astudillo et al. IMPACT: A toolchain to simulate and deploy nonlinear model predictive control. SoftwareX 34, 102717 (2026), doi: https://doi.org/10.1016/j.softx.2026.102717."

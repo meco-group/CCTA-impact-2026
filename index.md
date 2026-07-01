@@ -6,6 +6,7 @@ truck_trailer_video_id: SBNwXVDfLDg
 xplanar_video_id: zhZ2Ko5VxUk
 # drone_racing_video_id: bEeHD49rx20
 bin_picking_video_id: iULN3skmdjs
+overhead_crane_video_id: CcW1ONuOKA4
 ---
 
 
@@ -24,7 +25,7 @@ bin_picking_video_id: iULN3skmdjs
 
 Model Predictive Control is a well-established technique for controlling (possibly) nonlinear systems that has predictive ability and can cope with constraints. It has a strong track record in chemical engineering. More recent advances in problem formulations and high-performance solvers have expanded MPC’s applicability to domains such as power systems, mechatronics, and robotics, with complex dynamics and high sampling rates.
 
-In this tutorial, participants will engage in hands-on exploration of MPC applied to mechatronic systems using Impact [1][2]. Impact is a flexible toolchain for the specification, prototyping, and deployment of optimal control problems (OCP) and model predictive control (MPC) strategies, with automatic generation of deployable artifacts. Impact is built on top of the Rockit toolkit for OCPs [3] and the highly popular CasADi symbolic framework for numerical optimization [4].
+In this tutorial, participants will engage in hands-on exploration of MPC applied to mechatronic systems using Impact [1][2][8]. Impact is a flexible toolchain for the specification, prototyping, and deployment of optimal control problems (OCP) and model predictive control (MPC) strategies, with automatic generation of deployable artifacts. Impact is built on top of the Rockit toolkit for OCPs [3] and the highly popular CasADi symbolic framework for numerical optimization [4].
 
 The key contribution of the toolchain, and this workshop, is to reduce the engineering complexity of MPC implementations by providing:
 
@@ -40,7 +41,8 @@ The following videos show previous works developed by the MECO Research Team usi
 
 {% include youtubePlayer.html id=page.xplanar_video_id %}
 
-{% include youtubePlayer.html id=page.bin_picking_video_id %}
+{% include youtubePlayer.html id=overhead_crane_video_id %}
+
 
 ### Registration
 
