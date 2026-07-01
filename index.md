@@ -41,7 +41,7 @@ The following videos show previous works developed by the MECO Research Team usi
 
 {% include youtubePlayer.html id=page.xplanar_video_id %}
 
-{% include youtubePlayer.html id=overhead_crane_video_id %}
+{% include youtubePlayer.html id=page.overhead_crane_video_id %}
 
 
 ### Registration
