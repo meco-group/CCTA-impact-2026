@@ -4,6 +4,16 @@
 {% include head.html %}
 
 <body>
+    <!-- Canadian maple-leaf theme banner (site-wide) -->
+    <div class="ca-banner" role="presentation" aria-hidden="true">
+        <div class="ca-banner__leaves">
+            {% assign leaf_url = '/assets/images/maple_leaf.svg' | prepend: site.url %}
+            {% for i in (1..9) %}
+            <img class="ca-banner__leaf" src="{{ leaf_url }}" alt="" width="24" height="24">
+            {% endfor %}
+        </div>
+    </div>
+
     {{ content }}
     <script src="{{ '/assets/js/bootstrap.js' | prepend: site.url }}"></script>
     <script src="{{ '/assets/js/leaflet.js' | prepend: site.url }}"></script>

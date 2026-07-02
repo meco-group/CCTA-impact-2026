@@ -1,0 +1,42 @@
+
+// ---------------------------------------------------------------------------
+// Canadian maple-leaf theme banner (site-wide top strip)
+// Markup lives in _layouts/default.html (.ca-banner)
+// Leaf image: assets/images/maple_leaf.svg
+// ---------------------------------------------------------------------------
+$ca-red: #d80621; // Canadian flag red
+
+.ca-banner {
+    position: sticky;      // stays pinned to the top while scrolling
+    top: 0;
+    z-index: 1030;         // above page content / navbar
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 3px solid $ca-red;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+}
+
+.ca-banner__leaves {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;          // spacing between leaves
+    flex-wrap: nowrap;
+    overflow: hidden;      // hide extras on narrow screens
+    height: 34px;
+    padding: 0 1rem;
+}
+
+.ca-banner__leaf {
+    display: block;
+    height: 22px;
+    width: auto;
+    flex: 0 0 auto;
+    opacity: 1;
+}
+
+// On small screens, show fewer leaves and tighten spacing
+@media (max-width: 576px) {
+    .ca-banner__leaves { gap: 1rem; height: 30px; }
+    .ca-banner__leaf   { height: 18px; }
+}
