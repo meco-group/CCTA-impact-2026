@@ -1,6 +1,7 @@
 services:
   ccta-workshop:
-    build: .
+    # build: .
+    image: callenslouis/ccta-workshop:latest
     container_name: ccta-workshop
     stdin_open: true
     tty: true

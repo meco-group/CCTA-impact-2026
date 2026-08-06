@@ -13,7 +13,6 @@ RUN apt-get install git wget -y
 RUN apt-get install python3-pip -y
 RUN apt-get install x11-xserver-utils -y
 
-
 RUN python -m pip install numpy matplotlib pandas scipy control pin meshcat
 
 # Get impact
@@ -28,6 +27,9 @@ RUN git clone https://gitlab.kuleuven.be/meco-setups/furuta-stepper-cpp.git
 WORKDIR /home/furuta-stepper-cpp
 RUN git checkout minimal
 
+##########################################################
+### Remaining requirements for C++ implementation only ###
+##########################################################
 # Casadi from source (for use in C++)
 WORKDIR /opt
 RUN apt install gfortran swig libmetis-dev -y
@@ -75,3 +77,6 @@ WORKDIR /home/impact-cpp/build
 RUN cmake .. -DBUILD_EXAMPLES=ON -DBUILD_TESTS=ON -DENABLE_RT=OFF
 RUN make -j
 RUN make install
+
+# bring us home
+WORKDIR /home/furuta-stepper-cpp
