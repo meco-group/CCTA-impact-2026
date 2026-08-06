@@ -1,0 +1,17 @@
+services:
+  ccta-workshop:
+    build: .
+    container_name: ccta-workshop
+    stdin_open: true
+    tty: true
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      - DISPLAY=$DISPLAY
+      - QT_X11_NO_MITSHM=1
+    network_mode: host
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    privileged: true
+    command: bash
