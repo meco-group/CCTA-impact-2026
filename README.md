@@ -21,3 +21,12 @@ docker compose up -d
 This can take a few minutes. Within the container, navigate to /home/furuta-stepper-cpp/.
 
 If you prefer not to use docker and do the installation yourself, you can find instructions in `furuta_pendulum/README.md`
+
+### Arduino Alvik Assignment (morning session)
+
+Follow the Setup instructions at [docs.arduino.cc](https://docs.arduino.cc/tutorials/alvik/setting-alvik-arduino-ide).
+
+- Install Arduino IDE
+- Install Alvik library (From the IDE vertical toolbar: "Library manager" -> search for Alvik)
+- Install Arduino Nano ESP32 board (From the IDE vertical toolbar: "Board manager" -> search for esp32)
+
