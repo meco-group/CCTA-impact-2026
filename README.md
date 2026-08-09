@@ -28,6 +28,8 @@ Follow the Setup instructions at [docs.arduino.cc](https://docs.arduino.cc/tutor
 - Install Arduino Nano ESP32 board (From the IDE vertical toolbar: "Board manager" -> search for esp32)
 
 ### Furuta Pendulum Assignment
+![me](furuta_pendulum/furuta-ccta-gif.gif)
+
 This repo contains a `Dockerfile` and a `docker-compose.yml`. To pull the required image, navigate to `furuta_pendulum` and run
 
 ```
