@@ -1,3 +1,5 @@
+name: ccta-workshop
+
 services:
   ccta-workshop:
     # build: .

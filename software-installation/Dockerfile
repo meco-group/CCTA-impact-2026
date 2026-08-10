@@ -79,4 +79,4 @@ RUN make -j
 RUN make install
 
 # bring us home
-WORKDIR /home/furuta-stepper-cpp
+WORKDIR /home/
