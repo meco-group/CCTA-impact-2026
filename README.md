@@ -18,6 +18,16 @@ Program to be announced.
 ## Software installation
 
 The easiest way to follow and complete all assignments in this hands-on workshop is to bring a machine with linux or WSL, along with Docker.
+For vscode users, a dev container can be used to access all the necessary code. After cloning this repository, opening vscode in this repository.
+Then, open the command palette (Ctrl + Shift + P) and execute `Dev Containers: Rebuild and Reopen in Container`. This will open a new window with all required software and files. Note that downloading the docker image can take a few minutes.
+
+Instead of using a dev container, you can build your own docker container by navigating to `/software_installation` and running 
+```
+docker compose up -d
+```
+
+This can take a few minutes.
+If you prefer not to use docker and do the installation yourself, you can find instructions in `software_installation/README.md`
 
 ### Arduino Alvik Assignment (morning session)
 
@@ -27,16 +37,6 @@ Follow the Setup instructions at [docs.arduino.cc](https://docs.arduino.cc/tutor
 - Install Alvik library (From the IDE vertical toolbar: "Library manager" -> search for Alvik)
 - Install Arduino Nano ESP32 board (From the IDE vertical toolbar: "Board manager" -> search for esp32)
 
-### Furuta Pendulum Assignment
 ![me](furuta_pendulum/furuta-ccta-gif.gif)
 
-This repo contains a `Dockerfile` and a `docker-compose.yml`. To pull the required image, navigate to `software_installation` and run
-
-```
-docker compose up -d
-```
-
-This can take a few minutes.
-
-If you prefer not to use docker and do the installation yourself, you can find instructions in `software_installation/README.md`
 
