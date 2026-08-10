@@ -1,10 +1,10 @@
-This repo contains a `Dockerfile` and a `docker-compose.yml`. To pull the required image, navigate to `furuta_pendulum` and run
+This repo contains a `Dockerfile` and a `docker-compose.yml`. To pull the required image, navigate to `software_installation` and run
 
 ```
 docker compose up -d
 ```
 
-This can take a few minutes. Within the container, navigate to /home/furuta-stepper-cpp/.
+This can take a few minutes.
 
 If you prefer not to use docker and do the installation yourself, you will need the following python packages
 ```
@@ -23,6 +23,7 @@ cd furuta-stepper-cpp
 git checkout minimal
 ```
 
+(The remaning software installation is only required for the furuta pendulum assignment to run a real-time simulation)
 To use ImpaC++t and simulate a real-time system, some source builds are required (we assume you have a linux/WSL system)
 Get a CasADi source build (for use from within C++ scripts)
 ```
