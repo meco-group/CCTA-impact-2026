@@ -79,4 +79,4 @@ RUN make -j
 RUN make install
 
 # bring us home
-WORKDIR /home/
+WORKDIR /home
