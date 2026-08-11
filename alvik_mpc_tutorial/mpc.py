@@ -372,8 +372,9 @@ def _plot():
     axc.grid(True); axc.legend(); axc.set_xlabel("t [s]"); axc.set_title("heading")
 
     fig.tight_layout()
-    fig.savefig("mpc_solution.png", dpi=110)
-    print(f"Saved mpc_solution.png (solve {r['solve_ms']:.1f} ms, status {r['status']})")
+    out_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "mpc_solution.png")
+    fig.savefig(out_path, dpi=110)
+    print(f"Saved {out_path} (solve {r['solve_ms']:.1f} ms, status {r['status']})")
 
 
 if __name__ == "__main__":
