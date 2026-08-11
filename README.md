@@ -5,8 +5,6 @@ Numerical Optimization and Model Predictive Control: A Hands On Journey with Cas
 
 This repository contains source of training material for the `Impact Workshop 2026`.
 
-Program to be announced.
-
 ## Program
 | Session | Content |
 |---|---|
@@ -16,10 +14,13 @@ Program to be announced.
 | 3:30pm - 5:00pm | assignment 2: swingup control and stabilization of a furuta pendulum |
 
 ## Software installation
+To use the impact toolchain, `pip install impact-meco` is sufficient. However, to export c-artifacts, a compiler is required as well.
 
 The easiest way to follow and complete all assignments in this hands-on workshop is to bring a machine with linux or WSL, along with Docker.
-For vscode users, a dev container can be used to access all the necessary code. After cloning this repository, opening vscode in this repository.
-Then, open the command palette (Ctrl + Shift + P) and execute `Dev Containers: Rebuild and Reopen in Container`. This will open a new window with all required software and files. Note that downloading the docker image can take a few minutes.
+A `Dockerfile` and a `docker-compose.yml` is provided in `/software_installation`. It includes the dependencies to deploy all code for the assignments.
+
+For vscode users, a dev container can be used to access all the necessary code. After cloning this repository, open vscode in this repository.
+Then, open the command palette (Ctrl + Shift + P) and execute `Dev Containers: Rebuild and Reopen in Container`. This will open a new vscode window with all required software and files. Note that downloading the docker image can take a few minutes.
 
 Instead of using a dev container, you can build your own docker container by navigating to `/software_installation` and running 
 ```
@@ -30,6 +31,7 @@ This can take a few minutes.
 If you prefer not to use docker and do the installation yourself, you can find instructions in `software_installation/README.md`
 
 ### Arduino Alvik Assignment (morning session)
+To deploy code-generated artifacts on the arduino alvik, the arduino IDE and some libraries are required.
 
 Follow the Setup instructions at [docs.arduino.cc](https://docs.arduino.cc/tutorials/alvik/setting-alvik-arduino-ide).
 
