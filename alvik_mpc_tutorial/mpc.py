@@ -48,6 +48,7 @@ HEAD_GATE_R = 0.20  # [m] fade the heading term off within this radius of the go
 # Parked value for an unused obstacle slot: far away with zero radius.
 PARKED_OBS = (1e3, 1e3, 0.0)
 
+DEBUG = True
 
 def build_mpc(n_obs=N_OBS, horizon=N, T_horizon=T):
     """Build the Impact MPC. Returns (mpc, symbols dict)."""
@@ -128,17 +129,30 @@ def build_mpc(n_obs=N_OBS, horizon=N, T_horizon=T):
 
     mpc.method(im.MultipleShooting(N=horizon, M=1, intg="rk"))
 
-    mpc.solver(
-        "fatrop",
-        {
-            "expand": True,
-            "structure_detection": "auto",
-            "verbose": False,
-            "print_time": False,
-            "error_on_fail": False,
-            "fatrop": {"tol": 1e-3, "max_iter": 150, "print_level": 0},
-        },
-    )
+    if DEBUG:
+        mpc.solver(
+            "fatrop",
+            {
+                "expand": True,
+                "structure_detection": "auto",
+                "verbose": True,
+                "print_time": True,
+                "error_on_fail": False,
+                "fatrop": {"tol": 1e-3, "max_iter": 150, "print_level": 5},
+            },
+        )
+    else:
+        mpc.solver(
+            "fatrop",
+            {
+                "expand": True,
+                "structure_detection": "auto",
+                "verbose": False,
+                "print_time": False,
+                "error_on_fail": False,
+                "fatrop": {"tol": 1e-3, "max_iter": 150, "print_level": 0},
+            },
+        )
 
     syms = dict(px=px, py=py, theta=theta, v=v, omega=omega,
                 x_current=x_current, goal=goal, obs=obs,
