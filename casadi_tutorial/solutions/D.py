@@ -1,95 +1,29 @@
-"""
-Motion planning
-===============
+import casadi as ca
 
-Simple motion planning with circular obstacle
-"""
+x = ca.MX.sym('x') 
+u = ca.MX.sym('u')
 
-from rockit import *
-import matplotlib.pyplot as plt
-import numpy as np
-from numpy import pi, cos, sin, tan
-from casadi import vertcat, sumsqr
+F = ca.Function('F',[x,u],[x**2+u])
 
-ocp = Ocp(T=FreeTime(10.0))
+N = 4
 
-# Bicycle model
-# (S. LaValle. Planning Algorithms. Cambridge University Press, 2006, pp. 724–725.)
+opti = ca.Opti()
 
-x     = ocp.state()
-y     = ocp.state()
-theta = ocp.state()
+X = opti.variable(N+1)
+U = opti.variable(N)
 
-delta = ocp.control()
-V     = ocp.control()
+for k in range(N):
+  opti.subject_to(F(X[k],U[k])==X[k+1])
 
-L = 1
+opti.subject_to(X[0]==2)
+opti.subject_to(X[1:-1]>=0)
+opti.subject_to(X[-1]==3)
 
-ocp.set_der(x, V*cos(theta))
-ocp.set_der(y, V*sin(theta))
-ocp.set_der(theta, V/L*tan(delta))
+opti.minimize(ca.sumsqr(U)+ca.sumsqr(X))
 
-# Initial constraints
-ocp.subject_to(ocp.at_t0(x)==0)
-ocp.subject_to(ocp.at_t0(y)==0)
-ocp.subject_to(ocp.at_t0(theta)==pi/2)
+opti.solver('ipopt')
+sol = opti.solve()
 
-# Final constraint
-ocp.subject_to(ocp.at_tf(x)==0)
-ocp.subject_to(ocp.at_tf(y)==10)
+print(sol.value(U)) # should be [-2.7038;-0.5430;0.2613;0.5840]
 
-ocp.set_initial(x,0)
-ocp.set_initial(y,ocp.t)
-ocp.set_initial(theta, pi/2)
-ocp.set_initial(V,1)
-
-ocp.subject_to(0 <= (V<=1))
-ocp.subject_to( -pi/6 <= (delta<= pi/6))
-
-# Round obstacle
-p0 = vertcat(0.2,5)
-r0 = 1
-
-p = vertcat(x,y)
-ocp.subject_to(sumsqr(p-p0)>=r0**2)
-
-# Minimal time
-ocp.add_objective(ocp.T)
-ocp.add_objective(ocp.integral(x**2))
-
-# Pick a solution method
-ocp.solver('ipopt')
-
-# Make it concrete for this ocp
-ocp.method(MultipleShooting(N=20,M=4,intg='rk'))
-
-# solve
-sol = ocp.solve()
-
-from pylab import *
-figure()
-
-ts, xs = sol.sample(x, grid='control')
-ts, ys = sol.sample(y, grid='control')
-
-plot(xs, ys,'bo')
-
-ts, xs = sol.sample(x, grid='integrator')
-ts, ys = sol.sample(y, grid='integrator')
-
-plot(xs, ys, 'b.')
-
-
-ts, xs = sol.sample(x, grid='integrator',refine=10)
-ts, ys = sol.sample(y, grid='integrator',refine=10)
-
-plot(xs, ys, '-')
-
-ts = np.linspace(0,2*pi,1000)
-plot(p0[0]+r0*cos(ts),p0[1]+r0*sin(ts),'r-')
-
-xlabel('x')
-ylabel('y')
-
-axis('equal')
-show(block=True)
+ca.jacobian(opti.g,opti.x).sparsity().spy()
